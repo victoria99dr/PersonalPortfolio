@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container p-5 my-5 bg-dark text-white " style="background-image: url(../static/images/gold5.jpg)">
+        <!--Contact Page Section-->
+        <div class="container p-5 my-5 border"style="background: #ffffff">
+            <form action="/action_page.php">
+                <!-- Multiple inputs -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Person</span>
+                    <input type="text" class="form-control" placeholder="First Name">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+                <div class="input-group">
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
+                    <span class="input-group-text">@example.com</span>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Subject</span>
+                    <input type="text" class="form-control">
+                </div>
+                <label for="comment">Message:</label>
+                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                <div class="form-check mb-3">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

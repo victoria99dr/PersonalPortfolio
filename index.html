@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!--Body-->
+    <div class="container p-5 my-5" style="background-image: url('../static/images/gold3.jpg')">
+        <h8 class="text-white">Hi i am</h8>
+        <h1 class="text-white">Victoria Bari</h1>
+        <h5 class="text-white">I'm a junior Web and App Developer</h5>
+        <a href="../static/documents/CURRICULUM%20VITAE.docx"><button style="background: #e0a800">view CV</button></a>
+    </div>
+
+
+    <!--About Page Section-->
+    <div class="container p-5 my-5 bg-dark text-white" style="background-image: url('../static/images/gold1.jpg')">
+        <div class="container p-5 my-5 bg-dark text-white " >
+            <h1>About Me</h1>
+            <h3>Hi i am Victoria.</h3>
+            <h4>I am currently a student at eMobilis Technology Training Institute</h4>
+            <p>I can provide clean code and an attractive template design,
+                analyze and identify areas  in existing programs that need modification and also code new websites and apps.
+                I love the field of technology because it boosts progresses of various companies in their activities and helps them to perform tasks
+                using less time.</p>
+            <p>My favorite thing I love doing is art which helps me to implement it in the websites I create.
+                Drawing is my hobby which I do in my leisure time.Since I was a kid I used to watch my dad repair devices which challenged me to learn more about fixing electronic devices.
+                Furthermore I came to learn about software more deeper while I was in eMobilis where they teach us how to create application software from scratch.I really enjoy the lessons taught by our lecturer.
+                Lastly my parents made me who I am today and am grateful to them,they always encourage me to keep on moving and to never give up.</p>
+
+        </div>
+    </div>
+
+
+    <!--Skills Section-->
+    <div class="container p-5 my-5 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex">
+                <img class="img-fluid" src="../static/images/html.jpg" alt="" class="border">
+                <img class="img-fluid" src="../static/images/css2.jpg" alt="" class="border">
+                <img class="img-fluid" src="../static/images/bootstrap.jpg" alt="" class="border">
+            </div>
+            <div class="d-flex">
+                <img class="img-fluid" src="../static/images/android.jpg" alt="" class="border">
+                <img class="img-fluid" src="../static/images/django.jpg" alt="" class="border">
+            </div>
+            <div class="d-flex">
+                <img class="img-fluid" src="../static/images/python.jpg" alt="" class="border">
+                <img class="img-fluid" src="../static/images/kotlin.jpg" alt="" class="border">
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-5 my-5 bg-dark text-white " style="background-image: url(../static/images/gold5.jpg)">
+        <!--Contact Page Section-->
+        <div class="container p-5 my-5 border"style="background: #ffffff">
+            <form action="/action_page.php">
+                <!-- Multiple inputs -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Person</span>
+                    <input type="text" class="form-control" placeholder="First Name">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+                <div class="input-group">
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
+                    <span class="input-group-text">@example.com</span>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Subject</span>
+                    <input type="text" class="form-control">
+                </div>
+                <label for="comment">Message:</label>
+                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                <div class="form-check mb-3">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
